@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/icon_info"
+                android:src="@android:drawable/ic_dialog_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <TextView
+                android:id="@+id/window_title"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Hello"
+                android:layout_toRightOf="@+id/icon_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/magnitude_id"
+                android:layout_toRightOf="@+id/icon_info"
+                android:layout_below="@+id/window_title"
+                android:layout_width="wrap_content"
+                android:text="Magnitude"
+                android:layout_height="wrap_content">
+            </TextView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/magnitude_id"
+                android:layout_below="@+id/window_title"
+                android:id="@+id/button"
+                android:text="Click for more"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="6dp"
+                android:layout_alignBottom="@+id/magnitude_id"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </Button>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
